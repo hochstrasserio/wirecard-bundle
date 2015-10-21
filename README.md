@@ -12,7 +12,7 @@ Add the bundle to your AppKernel:
 // AppKernel.php
 $bundles = [
     …
-    new Hochstrasser\WirecardBundle\WirecardBundle(),
+    new Hochstrasser\WirecardBundle\HochstrasserWirecardBundle(),
     …
 ];
 ```

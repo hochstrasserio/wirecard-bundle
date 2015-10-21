@@ -4,7 +4,7 @@ namespace Hochstrasser\WirecardBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class WirecardBundle extends Bundle
+class HochstrasserWirecardBundle extends Bundle
 {
     function getContainerExtension()
     {

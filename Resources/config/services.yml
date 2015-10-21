@@ -1,0 +1,12 @@
+services:
+    hochstrasser_wirecard.context:
+        class: Hochstrasser\Wirecard\Context
+        arguments:
+            options:
+                customer_id: %hochstrasser_wirecard.customer_id%
+                secret: %hochstrasser_wirecard.secret%
+                shop_id: %hochstrasser_wirecard.shop_id%
+                language: %hochstrasser_wirecard.language%
+                backend_password: %hochstrasser_wirecard.backend_password%
+                user_agent: %hochstrasser_wirecard.user_agent%
+                javascript_script_version: %hochstrasser_wirecard.javascript_script_version%

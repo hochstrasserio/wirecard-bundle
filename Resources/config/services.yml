@@ -13,5 +13,5 @@ services:
     hochstrasser_wirecard.wirecard_controller:
         class: Hochstrasser\WirecardBundle\Controller\WirecardController
         arguments:
-            context: @hochstrasser_wirecard.context
-            event_dispatcher: @event_dispatcher
+            context: "@hochstrasser_wirecard.context"
+            event_dispatcher: "@event_dispatcher"

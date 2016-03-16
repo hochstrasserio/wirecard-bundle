@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php">
+    <php>
+        <server name="KERNEL_DIR" value="Tests/app" />
+        <server name="CUSTOMER_ID" value="D200411"/>
+        <server name="CUSTOMER_SECRET" value="CHCSH7UGHVVX2P7EHDHSY4T2S4CGYK4QBE4M5YUUG2ND5BEZWNRZW5EJYVJQ"/>
+        <server name="SHOP_ID" value="qmore"/>
+        <server name="BACKEND_PASSWORD" value="2g4f9q2m"/>
+    </php>
+    <testsuites>
+        <testsuite name="Project Test Suite">
+            <directory>Tests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

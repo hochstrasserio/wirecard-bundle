@@ -11,18 +11,39 @@ use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Hochstrasser\Wirecard\Context;
 use Hochstrasser\Wirecard\Fingerprint;
 use Hochstrasser\WirecardBundle\Event;
+use Hochstrasser\WirecardBundle\Event\ConfirmPaymentEvent;
 
 class WirecardController
 {
+    /**
+     * @var Context
+     */
     private $context;
+
+    /**
+     * @var EventDispatcherInterface
+     */
     private $eventDispatcher;
 
+    /**
+     * Constructor
+     */
     function __construct(Context $context, EventDispatcherInterface $eventDispatcher)
     {
         $this->context = $context;
         $this->eventDispatcher = $eventDispatcher;
     }
 
+    /**
+     * Controller action for confirm requests sent "server-to-server" from Wirecard
+     *
+     * Handles verification of the responseFingerprint and triggers the ConfirmPaymentEvent.
+     * Handle the event to decide wether the controller should respond to the confirmation
+     * with a success or an error message.
+     *
+     * @param Request $request
+     * @return Response
+     */
     function confirmAction(Request $request)
     {
         if (!$request->isMethod('POST')) {

@@ -1,5 +1,4 @@
 # wirecard-bundle
-use Hochstrasser\WirecardBundle\Event\ConfirmPaymentEvent;
 
 ## Install
 

@@ -16,4 +16,14 @@ class Test extends WebTestCase
         $kernel = static::createKernel();
         $this->assertNotNull($kernel);
     }
+
+    /**
+     * @test
+     * @expectedException Symfony\Component\Config\Definition\Exception\InvalidConfigurationException
+     */
+    function kernelThrowsExceptionWhenConfigInvalid()
+    {
+        $kernel = new \InvalidAppKernel('dev', true);
+        $kernel->boot();
+    }
 }

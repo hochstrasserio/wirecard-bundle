@@ -8,7 +8,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Kernel;
 use Symfony\Component\Routing\RouteCollectionBuilder;
 
-class AppKernel extends Kernel
+class InvalidAppKernel extends Kernel
 {
     use MicroKernelTrait;
 
@@ -33,7 +33,7 @@ class AppKernel extends Kernel
             'secret' => getenv('CUSTOMER_SECRET'),
             'language' => 'en',
             'shop_id' => getenv('SHOP_ID'),
-            'javascript_script_version' => 'pci3',
+            'javascript_script_version' => 'foobar',
         ]);
     }
 }

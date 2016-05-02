@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d34dc6aac0dc0f97b7c0faa5dbb2a305",
-    "content-hash": "ec68142460e6748d119cc86db6ef582f",
+    "hash": "64080c44d1351d5fb1537496c42ed687",
+    "content-hash": "54fd887204146c15c5ba16b6f9bbd014",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -465,16 +465,16 @@
         },
         {
             "name": "hochstrasserio/wirecard",
-            "version": "v0.2.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hochstrasserio/wirecard.git",
-                "reference": "2b2b114dbab1d304bd4add8c24450523e47ccf4a"
+                "reference": "1f5227b494348beeeee6e63108ec693b2bb3f472"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hochstrasserio/wirecard/zipball/2b2b114dbab1d304bd4add8c24450523e47ccf4a",
-                "reference": "2b2b114dbab1d304bd4add8c24450523e47ccf4a",
+                "url": "https://api.github.com/repos/hochstrasserio/wirecard/zipball/1f5227b494348beeeee6e63108ec693b2bb3f472",
+                "reference": "1f5227b494348beeeee6e63108ec693b2bb3f472",
                 "shasum": ""
             },
             "require": {
@@ -519,7 +519,7 @@
                 "hochstrasserio",
                 "wirecard"
             ],
-            "time": "2016-04-18 11:36:09"
+            "time": "2016-04-22 13:20:36"
         },
         {
             "name": "paragonie/random_compat",
